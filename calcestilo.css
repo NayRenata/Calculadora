@@ -17,12 +17,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: cornflowerblue;
+    
 }
 input{
 margin= 2px;
 border= none;
-border-radius: 50px;
+border-radius: 15px;
 align-content: center;
 }
 input[type= text]{
@@ -41,8 +41,9 @@ input[type = button]{
 #tudo{
     background: black;
     border-radius: 20px;
-    padding: 10px;
-    align-content: center;
+    padding: 20px;
+    box-align: center;
+    
 }
 #calculadora{
     display: flex;
