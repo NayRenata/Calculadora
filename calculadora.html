@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link href="calcestilo.css" rel="stylesheet">
+    <script type="text/javascript" src="calculadora.js"></script>
+</head>
+
+<body>
+ 
+
+      <form name="calc">
+        <h3 id="titulo">Calculadora Simples - N.Black</h3>
+              <div id="tudo">  
+                <div id="calculadora">  
+                  
+                    <input type="text" name="visor" /><br>
+                    <!--input: serve para criar controles interativos para formulários
+                    button:botão clicavel/ onclick:disparar uma função.-->
+                  
+                    
+                    
+                  </div>  
+               <!--alt+ clica nos lugares que vc quer escrever coisas iguais.-->
+                    <br>
+                  <div id="primeira">  
+                    <input type="button" value="7" class="bota borda" onclick="botao(value);"/>
+                    <input type="button" value="8" class="bota borda" onclick="botao(value)"/>
+                    <input type="button" value="9" class="bota borda" onclick="botao(value)"/>
+                    <input id="mult" type="button" value="*" class="bota borda" onclick="botao(value)"/>
+                  </div >
+                    <br>
+                  <div id="segunda">  
+                    <input type="button" value="4" class="bota borda" onclick="botao(value)"/>
+                    <input type="button" value="5" class="bota borda" onclick="botao(value)"/>
+                    <input type="button" value="6" class="bota borda" onclick="botao(value)"/>
+                    <input id="menos" type="button" value="-" class="bota borda" onclick="botao(value)">
+                  </div>  
+                    <br>
+                  <div id="terceira"> 
+                    <input type="button" value="1" class="bota borda" onclick="botao(value)"/>
+                    <input type="button" value="2" class="bota borda" onclick="botao(value)"/>
+                    <input type="button" value="3" class="bota borda" onclick="botao(value)"/>
+                    <input id="mais" type="button" value="+" class="bota borda" onclick="botao(value)"/>
+                  </div>  
+                    <br>
+                  <div id="quarta">
+                    <input type="button" value="0" class="bota borda"  onclick="botao(value)"/>
+                    <input type="button" value="=" class="bota borda"  onclick="calcule()"   />
+                    <input type="button" value="C" class="bota borda"  onclick="reset()"     />
+                    <input id="divisao" type="button" value="/" class="bota borda"  onclick="botao(value)"/>
+                  </div>
+                </div>  
+              </div>    
+          </form> 
+       
+   
+</body>
+</html>
