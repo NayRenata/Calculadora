@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="calcestilo.css" rel="stylesheet">
     <script type="text/javascript" src="calculadora.js"></script>
 </head>
 
 <body>
- 
-
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">N.Black</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tabuadas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calculadora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aulas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!---->
       <form name="calc">
         <h3 id="titulo">Calculadora Simples - N.Black</h3>
               <div id="tudo">  
@@ -19,33 +44,30 @@
                     <input type="text" name="visor" /><br>
                     <!--input: serve para criar controles interativos para formulários
                     button:botão clicavel/ onclick:disparar uma função.-->
-                  
-                    
-                    
-                  </div>  
+                </div>  
                <!--alt+ clica nos lugares que vc quer escrever coisas iguais.-->
-                    <br>
+                   <br>
                   <div id="primeira">  
                     <input type="button" value="7" class="bota borda" onclick="botao(value);"/>
                     <input type="button" value="8" class="bota borda" onclick="botao(value)"/>
                     <input type="button" value="9" class="bota borda" onclick="botao(value)"/>
                     <input id="mult" type="button" value="*" class="bota borda" onclick="botao(value)"/>
                   </div >
-                    <br>
+                    
                   <div id="segunda">  
                     <input type="button" value="4" class="bota borda" onclick="botao(value)"/>
                     <input type="button" value="5" class="bota borda" onclick="botao(value)"/>
                     <input type="button" value="6" class="bota borda" onclick="botao(value)"/>
                     <input id="menos" type="button" value="-" class="bota borda" onclick="botao(value)">
                   </div>  
-                    <br>
+                    
                   <div id="terceira"> 
                     <input type="button" value="1" class="bota borda" onclick="botao(value)"/>
                     <input type="button" value="2" class="bota borda" onclick="botao(value)"/>
                     <input type="button" value="3" class="bota borda" onclick="botao(value)"/>
                     <input id="mais" type="button" value="+" class="bota borda" onclick="botao(value)"/>
                   </div>  
-                    <br>
+                    
                   <div id="quarta">
                     <input type="button" value="0" class="bota borda"  onclick="botao(value)"/>
                     <input type="button" value="=" class="bota borda"  onclick="calcule()"   />
@@ -55,7 +77,9 @@
                 </div>  
               </div>    
           </form> 
-       
-   
+       <!--footer-->
+       <div class="footer">
+        <p></p>
+      </div>
 </body>
 </html>
